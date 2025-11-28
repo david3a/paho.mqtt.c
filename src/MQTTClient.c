@@ -664,7 +664,7 @@ void MQTTClient_free(void* memory)
 void* MQTTClient_malloc(size_t size)
 {
 	void* val;
-	int rc = 0;
+	[[maybe_unused]] int rc = 0;
 
 	FUNC_ENTRY;
 	val = malloc(size);
